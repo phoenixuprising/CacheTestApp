@@ -19,6 +19,18 @@
       app:layout_constraintVertical_bias="0.496"
       app:layout_constraintHorizontal_bias=".15"
       >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cache Data  "
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/add_cache_1mb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add 1mb"
+        />
     <Button
         android:id="@+id/add_cache_10mb"
         android:layout_width="match_parent"
@@ -32,8 +44,14 @@
         android:text="Add 100mb"
         />
     <Button
+        android:id="@+id/add_cache_1000mb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add 1000mb"
+        />
+    <Button
         android:id="@+id/clear_cache_data"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Clear Cache\n"
         />
@@ -63,6 +81,18 @@
       app:layout_constraintHorizontal_bias=".85"
       >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Data"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/add_app_data_1mb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add 1mb"
+        />
     <Button
         android:id="@+id/add_app_data_10mb"
         android:layout_width="match_parent"
@@ -75,6 +105,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add 100mb"
+        />
+    <Button
+        android:id="@+id/add_app_data_1000mb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add 1000mb"
         />
 
     <Button
