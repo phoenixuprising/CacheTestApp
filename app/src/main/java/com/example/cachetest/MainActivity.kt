@@ -117,8 +117,8 @@ class MainActivity() : AppCompatActivity() {
   }
 
   private fun setSizesTextViews() = scope.launch {
-    totalSpaceTextView.text = (filesDir.totalSpace / MEGABYTE).toString()
-    allocatableSpaceTextView.text = (filesDir.usableSpace / MEGABYTE).toString()
+    totalSpaceTextView.text = (filesDir.totalSpace / MEGABYTE).toString() + " mb"
+    allocatableSpaceTextView.text = (filesDir.usableSpace / MEGABYTE).toString() + " mb"
 
     var cacheSize: Long = 0
     for (cachedFile  in cacheDir.listFiles()) {
@@ -142,7 +142,7 @@ class MainActivity() : AppCompatActivity() {
     storageMonitorJob = scope.launch {
       while(true) {
         setSizesTextViews()
-        delay(1000)
+        delay(250)
       }
     }
   }
